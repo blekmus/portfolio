@@ -1,0 +1,35 @@
+.base {
+    margin-top: 180px;
+}
+
+.banner_content {
+    position: absolute;
+    left: 0;
+}
+
+.banner_content h1 {
+    display: flex;
+    background-color: var(--primary-text);
+    color: var(--primary-background);
+    align-items: center;
+    font-style: italic;
+    font-size: 60px;
+    font-weight: 500;
+    column-gap: 10px;
+    transform: rotate(-5deg) translateX(-30px);
+    line-height: 80px;
+}
+
+.content {
+    margin-top: 250px;
+    color: var(--secondary-text);
+    line-height: 145%;
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+
+.content p a {
+    color: var(--green-accent);
+    stroke: var(--green-accent);
+    font-weight: 500;
+}

@@ -1,0 +1,64 @@
+.base {
+    margin-top: 110px;
+    display: grid;
+    grid-template-columns: 1fr 30%;
+}
+
+.buttons {
+    display: flex;
+    column-gap: 20px;
+}
+
+.work_button {
+    border-radius: 50px;
+    border: 0.5px solid var(--tertiary-text);
+    background: none;
+    padding: 5px 10px;
+    color: var(--secondary-text);
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.2s ease;
+}
+
+.work_button:hover, .work_button:focus {
+    color: var(--primary-text);
+    border-color: var(--primary-text);
+}
+
+.work_button:hover .work_button_icon,
+.work_button:focus .work_button_icon {
+    fill: var(--primary-text);
+}
+
+.work_button_icon {
+    margin-left: 5px;
+    fill: var(--secondary-text);
+    transition: fill 0.2s ease;
+}
+
+.projects_button {
+    border-radius: 50px;
+    border: 0.5px solid var(--secondary-background);
+    background: var(--secondary-background);
+    padding: 5px 10px;
+    color: var(--secondary-text);
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.2s ease;
+}
+
+.projects_button:hover, .projects_button:focus {
+    color: var(--primary-text);
+    border-color: var(--primary-text)
+}
+
+.right {
+    position: relative;
+}
+
+.ipad_img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0.5;
+}

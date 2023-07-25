@@ -1,0 +1,8 @@
+.base {
+    display: flex;
+    flex-direction: column;
+    padding: var(--side-spacing);
+    min-height: 100vh;
+    padding-bottom: 20px;
+    overflow: hidden;
+}

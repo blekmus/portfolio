@@ -1,0 +1,46 @@
+.base {
+    margin-top: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+    margin-top: 60px;
+    flex-grow: 1;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: relative;
+}
+
+.iphone_img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.textbox {
+    margin-bottom: 40px;
+}
+
+.textbox p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 145%;
+    color: var(--primary-text);
+}
+
+.right_profession, .left_profession {
+    font-size: 50px;
+    color: var(--tertiary-text);
+    letter-spacing: 1.7px;
+    z-index: 2;
+}
