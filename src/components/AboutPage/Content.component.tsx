@@ -18,7 +18,7 @@ function Content() {
           <span style={{ color: "var(--tertiary-text)" }}>TL;DR</span>
           <br />
           <br />
-          I'm a <b>full-stack developer</b> based in <b>Ontario, Canada</b> with
+          I'm a <b>full-stack developer</b> based in <b>Canada</b> with
           a passion for making effective and functional applications without{" "}
           <s>looking like shit</s> sacrificing the user experience. <br />
           <br />
@@ -55,7 +55,7 @@ function Content() {
           <p className={styles.card_title}>Specifics</p>
           <div className={styles.card_items}>
             <p>He/Him</p>
-            <p>South Asian (Sri Lanka)</p>
+            <p>Caffeine addict</p>
           </div>
         </div>
         <div className={styles.card}>
@@ -84,7 +84,7 @@ function Content() {
                 />
               </svg>
             </a>
-            <a href="https://www.threads.net/@dinil.fdo" target="_blank">
+            {/* <a href="https://www.threads.net/@dinil.fdo" target="_blank">
               Threads (@dinil.fdo){" "}
               <svg
                 width="13"
@@ -106,7 +106,7 @@ function Content() {
                   strokeLinejoin="round"
                 />
               </svg>
-            </a>
+            </a> */}
           </div>
         </div>
         <div className={styles.card}>
@@ -139,7 +139,7 @@ function Content() {
         </div>
       </div>
     </animated.div>
-  )
+  );
 }
 
 export default Content

@@ -135,16 +135,16 @@ function Content() {
           level: 3,
         },
         {
-          title: "Windows",
+          title: "MacOS",
           level: 3,
         },
         {
-          title: "MacOS",
-          level: 2,
+          title: "Windows",
+          level:2,
         },
       ],
     },
-  ]
+  ];
 
   const contentSpring = useSpring({
     from: { y: "10px", opacity: 0 },

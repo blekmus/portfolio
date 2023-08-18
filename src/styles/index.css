@@ -12,8 +12,12 @@
   --green-accent: #96F45C;
   --pink-accent: #FF42D5;
 
-  --side-spacing: clamp(1rem, 4vw, 3.5em);
-  --radius-norm: 10px
+  --bright-green: #18FF59;
+
+  --side-spacing: 50px;
+  --radius-norm: 10px;
+
+  --nav-background: #1B1B1B;
 }
 
 :root {

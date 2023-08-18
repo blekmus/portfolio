@@ -1,35 +1,58 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useLayoutEffect, useRef, useState } from "react"
 import styles from "../../styles/AboutPage/Contact.module.css"
-import { useScroll } from "react-spring"
+import { useScroll, useSpring, animated } from "react-spring"
 
 function Contact() {
   const containerRef = useRef<HTMLDivElement>(null)
+  const [startAnimated, setStartAnimated] = useState(false)
 
-  useEffect(() => {
-    // if the url has #contact, scroll to containerRef
-    if (window.location.hash === "#contact") {
-      containerRef.current?.scrollIntoView()
+  // useEffect(() => {
+  //   // if the url has #contact, scroll to containerRef
+  //   if (window.location.hash === "#contact") {
+  //     containerRef.current?.scrollIntoView()
+  //   }
+  // }, [])
+
+  useLayoutEffect(() => {
+    // if the page is already scrolled sest the startAnimated to true
+    if (window.scrollY > 0) {
+      setStartAnimated(true);
     }
-  }, [])
+  }, [setStartAnimated]);
+
+  console.log(startAnimated)
+
+  const [scrollProps, setScrollProps] = useSpring(() => ({
+    transform: "translateX(-30px) rotate(-5deg)", // Initial position
+    // config: { tension: 120, friction: 14 }, // Adjust animation settings
+    // immediate: true,
+  }));
+
 
   useScroll({
     onChange: ({ value: { scrollYProgress } }) => {
-      if (scrollYProgress > 0.5) {
-        // translate the container to the left
-        if (containerRef.current) {
-          containerRef.current.style.transform = `rotate(-5deg) translateX(${
-            -100 * scrollYProgress * 3
-          }px)`
-        }
-      }
+      // console.log(scrollYProgress)
+      // if (scrollYProgress > 0.5) {
+      //   // translate the container to the left
+      //   if (containerRef.current) {
+      //     containerRef.current.style.transform = `rotate(-5deg) translateX(${
+      //       -100 * scrollYProgress * 3
+      //     }px)`
+      //   }
+      // }
+      setScrollProps({
+        transform: `translateX(${-100 * scrollYProgress * 5}px) rotate(-5deg)`,
+        // immediate: true,
+      });
     },
   })
+
 
   return (
     <div className={styles.base} id="contact">
       <div className={styles.banner}>
         <div className={styles.banner_content}>
-          <h1 ref={containerRef}>
+          <animated.h1 ref={containerRef} style={scrollProps}>
             HI@DINIL.DEV
             <svg
               width="46"
@@ -115,12 +138,19 @@ function Contact() {
               />
             </svg>
             HI@DINIL.DEV
-          </h1>
+          </animated.h1>
         </div>
       </div>
       <div className={styles.content}>
         <p>
-          <span style={{ fontWeight: 600, color: "var(--primary-text)", fontSize: "45px", lineHeight: "110%" }}>
+          <span
+            style={{
+              fontWeight: 600,
+              color: "var(--primary-text)",
+              fontSize: "45px",
+              lineHeight: "125%",
+            }}
+          >
             Have an idea?
             <br />
             Lets build it together
@@ -157,7 +187,7 @@ function Contact() {
         </p>
       </div>
     </div>
-  )
+  );
 }
 
 export default Contact

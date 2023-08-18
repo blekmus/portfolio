@@ -1,29 +1,35 @@
 import { useState } from "react";
+import TopHalf from "../components/ProjectsPage/TopHalf.component";
 import Footer from "../components/Footer.component";
-import Content from "../components/SkillsPage/Content.component";
-import TopHalf from "../components/SkillsPage/TopHalf.component";
 import TopBar from "../components/TopBar.component";
 import styles from "../styles/PageBase.module.css";
 import Menu from "../components/Menu.component";
 import useEcoMode from "../hooks/useEcoMode";
 import EnergySaving from "../components/EnergySaving.component";
+import Content from "../components/ProjectsPage/Content.component";
 
-function AboutPage() {
+function ProjectsPage() {
   const [menuState, setMenuState] = useState(false);
   const [ecoMode, setEcoMode] = useEcoMode();
 
   return (
-    <div className={styles.base}>
+    <div
+      className={styles.base}
+      style={{
+        overflow: menuState ? "hidden" : "initial",
+        height: menuState ? "100vh" : "initial",
+      }}
+    >
       {ecoMode ? <EnergySaving setEcoMode={setEcoMode} /> : null}
 
       <Menu
         menuState={menuState}
         setMenuState={setMenuState}
-        color="var(--pink-accent)"
+        color="var(--orange-accent)"
       />
       <TopBar
-        pageName="Skills"
-        color="var(--pink-accent)"
+        pageName="projects"
+        color="var(--orange-accent)"
         setMenuState={setMenuState}
       />
       <TopHalf />
@@ -33,4 +39,4 @@ function AboutPage() {
   );
 }
 
-export default AboutPage;
+export default ProjectsPage;
