@@ -2,6 +2,10 @@
     display: grid;
     grid-template-columns: 1fr 35%;
     column-gap: 150px;
+
+    @media (max-width: 768px) {
+        display: block;
+    }
 }
 
 .left p {

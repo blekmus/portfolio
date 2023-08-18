@@ -41,7 +41,7 @@ function Content() {
               <h4>
                 <pre>{item.title}</pre>
               </h4>
-              <h4>•</h4>
+              <h4 className={styles.sep}>•</h4>
               <p style={{ color: "var(--tertiary-text)" }}>
                 <i>{item.subTitle}</i>
               </p>

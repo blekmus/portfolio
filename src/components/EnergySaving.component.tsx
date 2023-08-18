@@ -47,8 +47,7 @@ function EnergySaving({
           <i>Power down when not in use.</i>
         </p>
         <p>
-          Click or touch anywhere on this page to return
-          <br /> to the previous page.
+          Click or touch anywhere on this page to return to the previous page.
         </p>
       </div>
       <img src="/leaves.png" className={styles.leaves} alt="leaves" />

@@ -17,19 +17,19 @@ function AboutPage() {
     <div
       className={styles.base}
       style={{
-        overflow: menuState ? "hidden" : "initial",
-        height: menuState ? "100vh" : "initial",
+        height: ecoMode || menuState ? "100vh" : "initial",
+        overflow: "hidden",
       }}
     >
       {ecoMode ? <EnergySaving setEcoMode={setEcoMode} /> : null}
       <Menu
         menuState={menuState}
         setMenuState={setMenuState}
-        color="var(--green-accent)"
+        color="var(--blue-accent)"
       />
       <TopBar
         pageName="about"
-        color="var(--green-accent)"
+        color="var(--blue-accent)"
         setMenuState={setMenuState}
       />
       <TopHalf />

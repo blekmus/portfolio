@@ -54,7 +54,7 @@ function BottomHalf() {
             </i>
           </p>
           <p>
-            My expertise is designing and engineering digital <br /> interfaces
+            My expertise is designing and engineering digital interfaces
             that are as beautiful as they are functional.
           </p>
         </animated.div>

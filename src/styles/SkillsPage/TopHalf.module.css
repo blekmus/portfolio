@@ -1,6 +1,10 @@
 .base {
     margin-top: 110px;
     margin-bottom: 150px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 100px;
+    }
 }
 
 .tag_list {
@@ -11,6 +15,11 @@
         display: flex;
         column-gap: 25px;
         align-items: center;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        row-gap: 10px;
     }
 }
 

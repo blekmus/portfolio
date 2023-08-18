@@ -40,9 +40,7 @@ function Footer() {
     <div className={styles.base}>
       <h1 className={styles.title}>Dinil Fernando • 2023</h1>
       <p className={styles.text}>
-        Designed with passion and automatically deployed to AWS Amplify
-        <br />
-        using Github Actions
+        Designed with passion and automatically deployed to AWS Amplify using Github Actions
       </p>
       <div className={styles.build}>
         <p>Build version</p>

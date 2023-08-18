@@ -18,18 +18,37 @@
     column-gap: 10px;
     transform: rotate(-5deg) translateX(-30px);
     line-height: 80px;
+
+    @media (max-width: 768px) {
+        font-size: 35px;
+        line-height: 45px;
+    }
 }
 
 .content {
     margin-top: 240px;
     color: var(--secondary-text);
     line-height: 145%;
-    /* margin-bottom: 50px; */
     font-size: 16px;
+
+    @media (max-width: 768px) {
+        margin-top: 120px;
+    }
 }
 
 .content p a {
-    color: var(--green-accent);
-    stroke: var(--green-accent);
+    color: var(--blue-accent);
+    stroke: var(--blue-accent);
     font-weight: 500;
+}
+
+.content_title {
+    font-weight: 600;
+    color: var(--primary-text);
+    font-size: 40px;
+    line-height: 110%;
+
+    @media (max-width: 768px) {
+        font-size: 26px;
+    }
 }

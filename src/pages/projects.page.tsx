@@ -16,8 +16,8 @@ function ProjectsPage() {
     <div
       className={styles.base}
       style={{
-        overflow: menuState ? "hidden" : "initial",
-        height: menuState ? "100vh" : "initial",
+        height: ecoMode || menuState ? "100vh" : "initial",
+        overflow: ecoMode || menuState ? "hidden" : "initial",
       }}
     >
       {ecoMode ? <EnergySaving setEcoMode={setEcoMode} /> : null}

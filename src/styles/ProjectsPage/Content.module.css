@@ -14,11 +14,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: start;
+        padding: 16px;
+    }
 }
 
 .card_text {
     display: flex;
     column-gap: 30px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        margin-bottom: 30px;
+
+        >.sep {
+            display: none;
+        }
+    }
 }
 
 .card_links {
@@ -26,18 +41,24 @@
     stroke: var(--secondary-text);
     display: flex;
     column-gap: 25px;
-    
+
 
     >a {
         transition: all 0.2s ease;
-            border: 0.5px solid var(--secondary-background);
-                border-radius: 50px;
-                padding: 3px 10px;
+        border: 0.5px solid var(--secondary-background);
+        border-radius: 50px;
+        padding: 3px 10px;
     }
 
     >a:hover {
         border: 0.5px solid var(--primary-text);
         color: var(--primary-text);
         stroke: var(--primary-text);
+    }
+
+    @media (max-width: 768px) {
+        display: flex;
+        justify-content: end;
+        width: 100%;
     }
 }

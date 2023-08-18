@@ -35,7 +35,7 @@ function TopHalf() {
           secondaryTitle={<>into web wizardry.</>}
         >
           <div className={styles.buttons}>
-            <Link className={styles.work_button} to="/about#contact">
+            <Link className={styles.work_button} to="/about">
               Available for Work
               <svg
                 className={styles.work_button_icon}

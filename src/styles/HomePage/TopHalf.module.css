@@ -2,6 +2,10 @@
     margin-top: 110px;
     display: grid;
     grid-template-columns: 1fr 30%;
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 .buttons {
@@ -54,6 +58,10 @@
 
 .right {
     position: relative;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 
 .ipad_img {

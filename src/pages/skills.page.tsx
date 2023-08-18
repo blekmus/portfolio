@@ -8,12 +8,18 @@ import Menu from "../components/Menu.component";
 import useEcoMode from "../hooks/useEcoMode";
 import EnergySaving from "../components/EnergySaving.component";
 
-function AboutPage() {
+function SkillsPage() {
   const [menuState, setMenuState] = useState(false);
   const [ecoMode, setEcoMode] = useEcoMode();
 
   return (
-    <div className={styles.base}>
+    <div
+      className={styles.base}
+      style={{
+        height: ecoMode || menuState ? "100vh" : "initial",
+        overflow: ecoMode || menuState ? "hidden" : "initial",
+      }}
+    >
       {ecoMode ? <EnergySaving setEcoMode={setEcoMode} /> : null}
 
       <Menu
@@ -33,4 +39,4 @@ function AboutPage() {
   );
 }
 
-export default AboutPage;
+export default SkillsPage;

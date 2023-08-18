@@ -18,7 +18,7 @@ function TopHalf() {
         mainTitle={<>Lets talk about </>}
         secondaryTitle={
           <>
-            the <span style={{ color: "var(--green-accent)" }}>elephant</span>{" "}
+            the <span style={{ color: "var(--blue-accent)" }}>elephant</span>{" "}
             in the room.
           </>
         }

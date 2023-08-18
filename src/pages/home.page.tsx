@@ -12,7 +12,13 @@ function HomePage() {
   const [ecoMode, setEcoMode] = useEcoMode();
 
   return (
-    <div className={styles.base}>
+    <div
+      className={styles.base}
+      style={{
+        height: ecoMode || menuState ? "100vh" : "initial",
+        overflow: "hidden",
+      }}
+    >
       {ecoMode ? <EnergySaving setEcoMode={setEcoMode} /> : null}
       <Menu
         menuState={menuState}
