@@ -1,41 +1,20 @@
-import { useLayoutEffect, useRef, useState } from "react"
+import { useRef } from "react"
 import styles from "../../styles/AboutPage/Contact.module.css"
 import { useScroll, useSpring, animated } from "react-spring"
 
 function Contact() {
   const containerRef = useRef<HTMLDivElement>(null)
-  const [startAnimated, setStartAnimated] = useState(false)
-
-  useLayoutEffect(() => {
-    // if the page is already scrolled sest the startAnimated to true
-    if (window.scrollY > 0) {
-      setStartAnimated(true);
-    }
-  }, [setStartAnimated]);
-
-  console.log(startAnimated)
 
   const [scrollProps, setScrollProps] = useSpring(() => ({
     transform: "translateX(-30px) rotate(-5deg)", // Initial position
-    // config: { tension: 120, friction: 14 }, // Adjust animation settings
-    // immediate: true,
+    config: { tension: 120, friction: 14 }, // Adjust animation settings
   }));
 
 
   useScroll({
     onChange: ({ value: { scrollYProgress } }) => {
-      // console.log(scrollYProgress)
-      // if (scrollYProgress > 0.5) {
-      //   // translate the container to the left
-      //   if (containerRef.current) {
-      //     containerRef.current.style.transform = `rotate(-5deg) translateX(${
-      //       -100 * scrollYProgress * 3
-      //     }px)`
-      //   }
-      // }
       setScrollProps({
         transform: `translateX(${-100 * scrollYProgress * 5}px) rotate(-5deg)`,
-        // immediate: true,
       });
     },
   })
