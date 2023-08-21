@@ -1,41 +1,50 @@
-import styles from "../../styles/HomePage/BottomHalf.module.css"
-import { useSpring, animated, config } from "react-spring"
-
-
+import styles from "../../styles/HomePage/BottomHalf.module.css";
+import { useSpring, animated, config } from "react-spring";
 
 function BottomHalf() {
   const contentSpring = useSpring({
     from: { opacity: 0 },
     to: async (next) => {
-      await next({ opacity: 1 })
+      await next({ opacity: 1 });
     },
     delay: 1900,
     config: config.slow,
-  })
+  });
+
+  const leftProfeshSpring = useSpring({
+    from: { opacity: 0 },
+    to: async (next) => {
+      await next({ opacity: 0.4 });
+    },
+    delay: 1900,
+    config: config.slow,
+  });
 
   const textboxSpring = useSpring({
     from: { opacity: 0 },
     to: async (next) => {
-      await next({ opacity: 1 })
+      await next({ opacity: 1 });
     },
     delay: 1900,
     config: config.slow,
-  })
+  });
 
-  const profeshSpring = useSpring({
+  const rightProfeshSpring = useSpring({
     from: { opacity: 0 },
     to: async (next) => {
-      await next({ opacity: 1 })
+      await next({ opacity: 0.4 });
     },
     delay: 1900,
     config: config.slow,
-  })
-
+  });
 
   return (
     <div className={styles.base}>
       <div className={styles.left}>
-        <animated.h1 className={styles.left_profession} style={contentSpring}>
+        <animated.h1
+          className={styles.left_profession}
+          style={leftProfeshSpring}
+        >
           Independant web
         </animated.h1>
         <animated.img
@@ -54,18 +63,21 @@ function BottomHalf() {
             </i>
           </p>
           <p>
-            My expertise is designing and engineering digital interfaces
-            that are as beautiful as they are functional.
+            My expertise is designing and engineering digital interfaces that
+            are as beautiful as they are functional.
           </p>
         </animated.div>
 
-        <animated.h1 className={styles.right_profession} style={profeshSpring}>
+        <animated.h1
+          className={styles.right_profession}
+          style={rightProfeshSpring}
+        >
           designer <span style={{ color: "var(--purple-accent)" }}>//</span>{" "}
           developer
         </animated.h1>
       </div>
     </div>
-  )
+  );
 }
 
-export default BottomHalf
+export default BottomHalf;
