@@ -4,22 +4,18 @@ import TopHalf from "../components/HomePage/TopHalf.component"
 import Menu from "../components/Menu.component"
 import TopBar from "../components/TopBar.component"
 import styles from "../styles/HomePage.module.css"
-import EnergySaving from "../components/EnergySaving.component"
-import useEcoMode from "../hooks/useEcoMode"
 
 function HomePage() {
   const [menuState, setMenuState] = useState(false);
-  const [ecoMode, setEcoMode] = useEcoMode();
 
   return (
     <div
       className={styles.base}
       style={{
-        height: ecoMode || menuState ? "100vh" : "initial",
+        height: menuState ? "100vh" : "initial",
         overflow: "hidden",
       }}
     >
-      {ecoMode ? <EnergySaving setEcoMode={setEcoMode} /> : null}
       <Menu
         menuState={menuState}
         setMenuState={setMenuState}
