@@ -18,8 +18,8 @@ function Content() {
           <span style={{ color: "var(--tertiary-text)" }}>TL;DR</span>
           <br />
           <br />
-          I'm a <b>full-stack developer</b> based in <b>Canada</b> with
-          a passion for making effective and functional applications without{" "}
+          I'm a <b>full-stack developer</b> based in <b>Canada</b> with a
+          passion for making effective and functional applications without{" "}
           <s>looking like shit</s> sacrificing the user experience. <br />
           <br />
           I specialize in end-to-end website implementation, taking charge of
@@ -55,7 +55,6 @@ function Content() {
           <p className={styles.card_title}>Specifics</p>
           <div className={styles.card_items}>
             <p>He/Him</p>
-            <p>Caffeine addict</p>
           </div>
         </div>
         <div className={styles.card}>
@@ -63,6 +62,29 @@ function Content() {
           <div className={styles.card_items}>
             <a href="https://github.com/blekmus" target="_blank">
               Github (blekmus){" "}
+              <svg
+                width="13"
+                height="13"
+                viewBox="0 0 13 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 11.3332L11.3332 1"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M1 1H11.3332V11.3332"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </a>
+            <a href="https://www.hackerrank.com/h200559428" target="_blank">
+              HackerRank{" "}
               <svg
                 width="13"
                 height="13"

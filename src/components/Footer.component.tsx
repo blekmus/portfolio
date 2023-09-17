@@ -40,7 +40,7 @@ function Footer() {
     <div className={styles.base}>
       <h1 className={styles.title}>Dinil Fernando • 2023</h1>
       <p className={styles.text}>
-        Designed with passion and automatically deployed to a production Vercel instance on every push
+        Designed with passion and automatically deployed to a production Vercel instance on every commit
       </p>
       <div className={styles.build}>
         <p>Build version</p>
