@@ -45,7 +45,13 @@ function App() {
               <p className="item-right">Technical Knowledge Base</p>
             </a>
           </div>
-
+          <hr />
+          <div className="row link">
+            <a href="https://git.dinil.dev" className="item" target="_blank">
+              <p className="item-left">Commicasa</p>
+              <p className="item-right">Personal Git Host</p>
+            </a>
+          </div>
           <hr />
         </div>
       </div>
@@ -73,7 +79,7 @@ function App() {
           <div className="row">
             <div className="item">
               <p className="item-left">Tooling</p>
-              <p className="item-right">AWS, Git, Figma, Docker, Linux</p>
+              <p className="item-right">Git, Figma, Docker, Linux</p>
             </div>
           </div>
           <hr />
@@ -157,10 +163,7 @@ function App() {
           <div className="row">
             <p className="item">Web Design</p>
             <div className="item">
-              <a
-                href="https://github.com/blekmus"
-                target="_blank"
-              >
+              <a href="https://github.com/blekmus" target="_blank">
                 <p>Github</p>
               </a>
             </div>
