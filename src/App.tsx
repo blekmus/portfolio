@@ -5,7 +5,7 @@ function App() {
     <>
       <div className="text-section row header">
         <h1 className="title">
-          Dinil Fernando <i style={{ paddingLeft: 30 }}></i>/<i>programmer</i>/
+          <i>/Dinil Fernando/</i>
         </h1>
         <h1 className="title">
           Aspiring full-stack web developer and startup founder. I design and
@@ -59,8 +59,7 @@ function App() {
       <div className="text-section row">
         <h1 className="title">
           <i>
-            Designing with passion, developing with pride. Nurtured in Sri
-            Lanka. Based in Canada.
+            Designing with passion, developing with pride. Based in Canada.
           </i>
         </h1>
       </div>
@@ -96,9 +95,8 @@ function App() {
 
       <div className="text-section row">
         <h1 className="title">
-          With a love for socializing, my work extends beyond mere development;
-          it revolves around leaving a lasting impression, allowing me to create
-          moments of connection between products and their audience.
+          With a love for innovation, my work extends beyond mere languages and frameworks;
+          it is a reflection of my passion to solve problems using any means necessary.
         </h1>
       </div>
 

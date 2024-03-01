@@ -30,6 +30,10 @@ hr {
     max-width: 75%;
   }
 
+  h1.title {
+    margin-bottom: 30px;
+  }
+
   // media query for screens smaller than 800px
   @media (max-width: 800px) {
     margin-bottom: 70px;
@@ -37,6 +41,10 @@ hr {
     .title {
       font-size: 23px;
       max-width: 100%;
+    }
+
+    h1.title {
+      margin-bottom: 20px;
     }
   }
 }
