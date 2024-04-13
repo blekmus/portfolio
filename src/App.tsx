@@ -26,18 +26,7 @@ function App() {
           <hr />
           <div className="row link">
             <a
-              href="https://thelonelylands.com"
-              className="item"
-              target="_blank"
-            >
-              <p className="item-left">The Lonely Lands</p>
-              <p className="item-right">Personal Blog</p>
-            </a>
-          </div>
-          <hr />
-          <div className="row link">
-            <a
-              href="https://archive.thelonelylands.com"
+              href="https://archive.dinil.dev"
               className="item"
               target="_blank"
             >
@@ -47,9 +36,13 @@ function App() {
           </div>
           <hr />
           <div className="row link">
-            <a href="https://git.dinil.dev" className="item" target="_blank">
-              <p className="item-left">Commicasa</p>
-              <p className="item-right">Personal Git Host</p>
+            <a
+              href="https://archive.dinil.dev/projects"
+              className="item"
+              target="_blank"
+            >
+              <p className="item-left">Projects</p>
+              <p className="item-right">Apps & Sites I've Made</p>
             </a>
           </div>
           <hr />
@@ -58,9 +51,7 @@ function App() {
 
       <div className="text-section row">
         <h1 className="title">
-          <i>
-            Designing with passion, developing with pride. Based in Canada.
-          </i>
+          <i>Designing with passion, developing with pride. Based in Canada.</i>
         </h1>
       </div>
 
@@ -95,8 +86,9 @@ function App() {
 
       <div className="text-section row">
         <h1 className="title">
-          With a love for innovation, my work extends beyond mere languages and frameworks;
-          it is a reflection of my passion to solve problems using any means necessary.
+          With a love for innovation, my work extends beyond mere languages and
+          frameworks; it is a reflection of my passion to solve problems using
+          any means necessary.
         </h1>
       </div>
 
