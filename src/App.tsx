@@ -46,6 +46,17 @@ function App() {
             </a>
           </div>
           <hr />
+          <div className="row link">
+            <a
+              href="https://thelonelylands.com"
+              className="item"
+              target="_blank"
+            >
+              <p className="item-left">The Lonely Lands</p>
+              <p className="item-right">Personal Blog</p>
+            </a>
+          </div>
+          <hr />
         </div>
       </div>
 
