@@ -73,7 +73,7 @@ function App() {
           <div className="row">
             <div className="item">
               <p className="item-left">Languages</p>
-              <p className="item-right">Typescript, Python, PHP, Go, Bash</p>
+              <p className="item-right">Typescript, C++, Python, PHP, Go, Bash, SQL</p>
             </div>
           </div>
           <hr />
@@ -90,7 +90,6 @@ function App() {
               <p className="item-right">EC2, RDS, S3, Lambda, Etc.</p>
             </div>
           </div>
-
           <hr />
         </div>
       </div>
