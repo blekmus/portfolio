@@ -62,7 +62,8 @@ function App() {
 
       <div className="text-section row">
         <h1 className="title">
-          <i>Designing with passion, developing with pride. Based in Canada.</i>
+          What am I up to right now?{" "}
+          <a href="https://thelonelylands.com/now">Find out</a>
         </h1>
       </div>
 
@@ -73,14 +74,16 @@ function App() {
           <div className="row">
             <div className="item">
               <p className="item-left">Languages</p>
-              <p className="item-right">Typescript, C++, Python, PHP, Go, Bash, SQL</p>
+              <p className="item-right">
+                Typescript, C++, Python, PHP, Go, Bash, SQL
+              </p>
             </div>
           </div>
           <hr />
           <div className="row">
             <div className="item">
               <p className="item-left">Tooling</p>
-              <p className="item-right">Git, Figma, Docker, Linux</p>
+              <p className="item-right">Git, Figma, Docker, Linux, K8s</p>
             </div>
           </div>
           <hr />

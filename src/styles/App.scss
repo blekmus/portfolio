@@ -34,6 +34,24 @@ hr {
     margin-bottom: 30px;
   }
 
+  a {
+    color: inherit;
+    padding-bottom: 5px;
+    background-image: url(/src/assets/swiggle.svg);
+    background-repeat: repeat-x;
+    background-size: 30px 10px;
+    animation: move 20s linear infinite;
+    animation-play-state: paused;
+    text-decoration: none;
+    background-color: transparent;
+    transition: color 0.1s ease-in-out;
+
+    &:hover {
+      animation-play-state: running;
+      color: #cd8cab;
+    }
+  }
+
   // media query for screens smaller than 800px
   @media (max-width: 800px) {
     margin-bottom: 70px;
@@ -45,6 +63,10 @@ hr {
 
     h1.title {
       margin-bottom: 20px;
+    }
+
+    a {
+      color: $hover-text;
     }
   }
 }
