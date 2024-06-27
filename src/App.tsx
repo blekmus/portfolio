@@ -8,8 +8,8 @@ function App() {
           <i>/Dinil Fernando/</i>
         </h1>
         <h1 className="title">
-          Aspiring full-stack web developer and startup founder. I design and
-          build experiences not just websites.
+          Aspiring software engineer and startup founder. I design and build
+          experiences not just apps and websites.
         </h1>
       </div>
 
@@ -62,8 +62,13 @@ function App() {
 
       <div className="text-section row">
         <h1 className="title">
-          What am I up to right now?{" "}
-          <a href="https://thelonelylands.com/now">Find out</a>
+          My work extends beyond mere languages and frameworks, its about the
+          solution.
+        </h1>
+        <h1 className="title">
+          <a href="https://archive.dinil.dev/projects" target="_blank">
+            Projects I've done
+          </a>
         </h1>
       </div>
 
@@ -99,9 +104,8 @@ function App() {
 
       <div className="text-section row">
         <h1 className="title">
-          With a love for innovation, my work extends beyond mere languages and
-          frameworks; it is a reflection of my passion to solve problems using
-          any means necessary.
+          What am I up to right now?{" "}
+          <a href="https://thelonelylands.com/now">Find out</a>
         </h1>
       </div>
 
